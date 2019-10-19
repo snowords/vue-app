@@ -1,2 +1,3 @@
-# vue-app
-This is my first vue-app
+# Vue-project
+## vue-cli vue脚手架
+Vue &amp; vuex learning
