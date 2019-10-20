@@ -1,3 +1,2 @@
-# Vue-project
-## vue-cli vue脚手架
-Vue &amp; vuex learning
+# Vue-App
+## Vue &amp; vue-cli &amp; vuex &amp; axios

@@ -15,14 +15,17 @@ export default {
   methods:{
       addTodo(){
           console.log(this.title);
-          const newTodo = {
-            // id : uuid.v4(),
-            title: this.title,
-            campleted: false
-          };
-          console.log(newTodo);
-          // 注册事件
-          this.$emit('handleAdd',newTodo);
+          if (this.title){
+            const newTodo = {
+              // id : uuid.v4(),
+              title: this.title,
+              campleted: false
+            };
+            // console.log(newTodo);
+            // 注册事件
+            this.$emit('handleAdd',newTodo);
+
+          }
           this.title = "";
       }
   },
