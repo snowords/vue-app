@@ -20,7 +20,7 @@ export default {
   methods:{
     handleDelete(id){
       console.log(id);
-      axios.delete("http://jsonplaceholder.typicode.com/todos/${id}")
+      axios.delete("https://jsonplaceholder.typicode.com/todos/${id}")
       .then(res => (this.todos = this.todos.filter(todo => todo.id !== id )))
       .catch(err => console.log(err));
     },
@@ -28,7 +28,7 @@ export default {
       // this.todos.push(newTodo);
       // es 6 语法
       const {title,completed} = newTodo;
-      axios.post("http://jsonplaceholder.typicode.com/todos",{
+      axios.post("https://jsonplaceholder.typicode.com/todos",{
         title: title,
         completed
       })
@@ -40,7 +40,7 @@ export default {
   },
   created(){
     // 数据请求
-    axios.get("http://jsonplaceholder.typicode.com/todos?_limit=100")
+    axios.get("https://jsonplaceholder.typicode.com/todos?_limit=100")
           .then(res => this.todos = res.data
                 // console.log(res.data);
                 )
