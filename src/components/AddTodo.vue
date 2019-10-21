@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import uuid from 'uuid'
+import uuid from 'uuid'
 export default {
   name: 'AddTodo',
   methods:{
@@ -17,7 +17,7 @@ export default {
           console.log(this.title);
           if (this.title){
             const newTodo = {
-              // id : uuid.v4(),
+              id : uuid.v4(),
               title: this.title,
               campleted: false
             };
